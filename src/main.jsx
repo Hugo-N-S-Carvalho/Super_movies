@@ -4,12 +4,15 @@ import {BrowserRouter,} from 'react-router-dom'
 import Router from './routes/routes.jsx'
 import  CreateGlobalStyle  from './styles/globalStyles.js'
 
-
+import { StyleSheetManager } from 'styled-components';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+ 
+ <React.StrictMode>
     <BrowserRouter>
+    <StyleSheetManager shouldForwardProp={(prop) => prop === 'img'}>
+    </StyleSheetManager>
     <Router/>
     </BrowserRouter>
     <CreateGlobalStyle/>
