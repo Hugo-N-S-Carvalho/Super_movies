@@ -1,11 +1,18 @@
 import PropTypes from 'prop-types';
-import { MainButton } from './styles';
+import { ButtonRed, ButtonWhite, } from './styles';
 
 
 
-function Button({children}){
+function Button({children, red }){
 
-return <MainButton>{children}</MainButton>
+return (
+<>{red ? (<ButtonRed>{children}</ButtonRed>) : (<ButtonWhite>{children}</ButtonWhite>)}
+
+
+
+</>
+
+)
 
 
 
@@ -15,6 +22,7 @@ return <MainButton>{children}</MainButton>
 
 Button.propTypes = {
     children: PropTypes.node.isRequired,
+    red: PropTypes.bool,
   };
 
 export default Button

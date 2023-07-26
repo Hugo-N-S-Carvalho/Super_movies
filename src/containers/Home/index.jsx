@@ -38,8 +38,8 @@ useEffect(()=>{
           <p>{movie.overview}</p>
           <div>
 
-            <Button>Assista Agora</Button>
-            <Button>Assista o Trailer</Button>
+            <Button red= {true} >Assista Agora</Button>
+            <Button red= {false}>Assista o Trailer</Button>
           </div>
           </Info>
           <Poster>
