@@ -4,13 +4,17 @@ import  styled  from "styled-components";
 export const Background = styled.div`
 
 background-image: url(${props => props.img});
-height: 100vh;
+
 background-position: center;
 background-size: cover;
 display: flex;
 align-items: center;
 justify-content: center;
- 
+
+position: relative;
+  overflow: hidden;
+  z-index: 0;
+  min-height:100vh;
 
 &::before{
     content: '';
@@ -32,6 +36,9 @@ justify-content: space-around;
 align-items: center;
 height: 100%;
 max-width: 1500px;
+margin: 0 auto;
+padding:20px;
+
 
 @media (max-width: 768px) {
     flex-direction: column-reverse;
@@ -85,16 +92,26 @@ p{
 
 export const Poster = styled.div`
 z-index: 2;
+max-width: 400px;
+max-height: 600px;
+border-radius: 40px;
+overflow: hidden; /* Adicionamos um overflow para esconder qualquer conteúdo que ultrapasse o limite do Poster */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adicionamos uma sombra para dar destaque ao poster */
+
 img {
 
-    width: 400px;
-    border-radius: 40px;
+    width: 100%;
+    height: 100%;
+  
+    object-fit: cover;
     
 }
 
 @media (max-width: 768px) {
     img {
-      width: 250px; /* Ajuste o tamanho da imagem para dispositivos menores */
+
+      max-width: 250px; /* Ajuste o tamanho da imagem para dispositivos menores */
+      max-height: 375px;
     }
   }
 
