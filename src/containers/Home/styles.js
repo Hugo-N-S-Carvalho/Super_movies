@@ -34,7 +34,7 @@ height: 100%;
 max-width: 1500px;
 
 @media (max-width: 768px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 20px;
   }
 
@@ -53,7 +53,7 @@ width: 50%;
 
 h1{
 
-font-size: 50px;
+font-size: 5rem;
 font-weight: 700;
 color: #ffffff;
 }
