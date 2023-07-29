@@ -73,7 +73,7 @@ p{
     font-weight: 500;
     color: #ffffff;
     margin-top:30px;
-    margin-botton: 20px;
+    margin-bottom: 20px;
     }
 
 
