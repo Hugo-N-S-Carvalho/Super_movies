@@ -25,6 +25,9 @@ position: relative;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5)
 }
+@media (max-width: 768px) {
+  min-height:60rem;
+  }
 `
 
 
@@ -79,7 +82,8 @@ p{
 
     @media (max-width: 768px) {
         width: 100%;
-        text-align: center;
+        max-height: 200px;
+        text-align: justify;
       }
 
 
@@ -110,7 +114,7 @@ img {
 @media (max-width: 768px) {
     img {
 
-      max-width: 200px; /* Ajuste o tamanho da imagem para dispositivos menores */
+      max-width: 50vw; /* Ajuste o tamanho da imagem para dispositivos menores */
       max-height: 300px;
     }
   }
