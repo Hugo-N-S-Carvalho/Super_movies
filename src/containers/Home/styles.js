@@ -14,7 +14,7 @@ justify-content: center;
 position: relative;
   overflow: hidden;
   z-index: 0;
-  min-height:100vh;
+  min-height:50vh;
 
 &::before{
     content: '';
@@ -110,8 +110,8 @@ img {
 @media (max-width: 768px) {
     img {
 
-      max-width: 250px; /* Ajuste o tamanho da imagem para dispositivos menores */
-      max-height: 375px;
+      max-width: 200px; /* Ajuste o tamanho da imagem para dispositivos menores */
+      max-height: 300px;
     }
   }
 

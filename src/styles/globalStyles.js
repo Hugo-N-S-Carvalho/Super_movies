@@ -7,8 +7,8 @@ export default createGlobalStyle`
 *{
 
     margin: 0;
-    paddin: 0;
-    Box-sizing: border-box;
+    padding: 0;
+    box-sizing: border-box;
     outline: none;
     text-decoration: none;
 }
