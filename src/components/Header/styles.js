@@ -18,6 +18,7 @@ export const Container = styled.div`
 
   @media screen and (max-width: 768px) {
     padding: 10px 20px;
+    
     img {
       width: 20%;
     }
@@ -38,6 +39,8 @@ export const Menu = styled.ul`
 
   @media screen and (max-width: 768px) {
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   @media screen and (max-width: 480px) {
