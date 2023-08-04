@@ -205,7 +205,6 @@ margin-top:30px;
   }
 `;function da({children:e,red:t,...n}){return N.jsx(N.Fragment,{children:t?N.jsx(Hy,{...n,children:e}):N.jsx(Vy,{...n,children:e})})}da.propTypes={children:xn.node.isRequired,red:xn.bool};const Wy=Ee.div`
 
-
 background: #000000;
 padding: 0 20px;
 overflow: auto;
@@ -237,6 +236,7 @@ img{
 border-radius: 30px;
 width: 300px;
 height: 100%;
+
 }
 
 
@@ -252,13 +252,13 @@ margin-top: 15px;
   z-index: 9999;
   background-color: rgba(0, 0, 0, 0.7);
 
-  position: absolute;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
 `,Cw=Ee.div`
   background: #000000;
-  width: 70%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
