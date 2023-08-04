@@ -13,6 +13,7 @@ function DefaultLayout(){
 <StyleSheetManager shouldForwardProp={(prop) => prop !== 'data-changebackground'}>
 <Header/>
 </StyleSheetManager>
+
 <Outlet/>
 
 </>

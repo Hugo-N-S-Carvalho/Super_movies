@@ -1,6 +1,19 @@
 import  styled  from "styled-components";
 
 
+
+
+
+
+export const Div = styled.div`
+
+z-index: -90;
+
+
+`
+
+
+
 export const Background = styled.div`
 
 background-image: url(${props => props.img});
@@ -125,4 +138,5 @@ export const ContainerButtons = styled.div`
 display: flex;
 gap: 20px;
 margin-top:30px;
+z-index:1;
 `

@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 import { useNavigate } from "react-router-dom";
-import { Background, Container, ContainerButtons, Info, Poster } from "./styles";
+import { Background, Container, ContainerButtons, Div, Info, Poster } from "./styles";
 import Button from "../../components/Button";
 import Slider from "../../components/Slider";
 import { getImages } from "../../utils/getImages";
@@ -64,7 +64,7 @@ Promise.all([
 
   return (
     <>
-    
+   <Div >
       {movie && (
         <Background img= {getImages(movie.backdrop_path)}>
           {showModal &&  <Modal movieId={movie.id} setShowModal={setShowModal} />}
@@ -91,6 +91,7 @@ Promise.all([
      {topSeries && <Slider info={topSeries} title={'Top Séries'} />}
      {popularSeries && <Slider info={popularSeries} title={'Séries Populares'} />}
      {popularPerson && <Slider info={popularPerson} title={'Atores Populares'} />}
+     </Div>
     </>
   );
 }

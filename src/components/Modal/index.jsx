@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
-import { Container, Background } from './styles';
+import { Container, Background, Button } from './styles';
 import { useEffect, useState } from 'react';
 
 import { getMovies } from '../../services/getData';
+import { PiBackspaceDuotone } from "react-icons/pi";
 
 function Modal({movieId, setShowModal}){
 
@@ -22,6 +23,7 @@ function Modal({movieId, setShowModal}){
     <Background onClick={() => setShowModal(false)}>   
     {movie && (
        <Container>
+        <Button onClick={() => setShowModal(false)}><PiBackspaceDuotone/></Button>
       <iframe src={`https://www.youtube.com/embed/${movie.key}`}
       title='Youtube Vídeo Player'
       height={'500px'}
@@ -30,6 +32,7 @@ function Modal({movieId, setShowModal}){
        
         
       </iframe>
+     
     </Container>
 )}
     </Background>
