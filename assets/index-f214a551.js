@@ -208,7 +208,7 @@ margin-top:30px;
 
 background: #000000;
 padding: 0 20px;
-
+overflow: auto;
 
 h2{
     color: #ffffff;
@@ -290,6 +290,7 @@ margin-top: 15px;
 
   @media screen and (max-width: 768px) {
     padding: 10px 20px;
+    
     img {
       width: 20%;
     }
@@ -308,6 +309,8 @@ margin-top: 15px;
 
   @media screen and (max-width: 768px) {
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   @media screen and (max-width: 480px) {
