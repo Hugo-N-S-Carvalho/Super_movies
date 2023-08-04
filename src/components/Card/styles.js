@@ -20,6 +20,7 @@ img{
 border-radius: 30px;
 width: 300px;
 height: 100%;
+
 }
 
 

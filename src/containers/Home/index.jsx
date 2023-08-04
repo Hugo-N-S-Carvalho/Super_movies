@@ -64,6 +64,7 @@ Promise.all([
 
   return (
     <>
+    
       {movie && (
         <Background img= {getImages(movie.backdrop_path)}>
           {showModal &&  <Modal movieId={movie.id} setShowModal={setShowModal} />}

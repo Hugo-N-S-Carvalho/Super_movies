@@ -6,7 +6,7 @@ export const Background = styled.div`
   z-index: 9999;
   background-color: rgba(0, 0, 0, 0.7);
 
-  position: absolute;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +15,7 @@ export const Background = styled.div`
 
 export const Container = styled.div`
   background: #000000;
-  width: 70%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
