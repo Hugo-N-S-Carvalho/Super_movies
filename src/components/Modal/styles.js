@@ -36,7 +36,7 @@ export const Container = styled.div`
   justify-content: flex-start;
 
   position: fixed;
-  padding: 50px;
+  padding: 20px;
   max-width: 1200px;
   flex-direction: row-reverse;
     align-items: flex-start;
@@ -44,7 +44,16 @@ margin-top: 20%;
   iframe{
     border:none;
     width: 120%;
-    max-height: 100%;
+    min-height: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    
+    margin-top: 0;
+    iframe {
+      min-width: 100%;
+      min-height: 100%;
+    }
   }
 `;
 
