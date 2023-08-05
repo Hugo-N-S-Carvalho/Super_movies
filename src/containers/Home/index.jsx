@@ -67,8 +67,7 @@ Promise.all([
    <Div >
       {movie && (
         <Background img= {getImages(movie.backdrop_path)}>
-          {showModal &&  <Modal movieId={movie.id} setShowModal={setShowModal} />}
-        <Container>
+           <Container>
         <Info>
         
           <h1>{movie.title}</h1>
@@ -86,7 +85,8 @@ Promise.all([
           </Container>
         </Background>
       )}
-      
+      {showModal &&  <Modal movieId={movie.id} setShowModal={setShowModal} />}
+       
      {topMovies && <Slider info={topMovies} title={'Top Filmes'} />}
      {topSeries && <Slider info={topSeries} title={'Top Séries'} />}
      {popularSeries && <Slider info={popularSeries} title={'Séries Populares'} />}

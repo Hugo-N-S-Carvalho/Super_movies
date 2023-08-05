@@ -8,7 +8,7 @@ export const Background = styled.div`
 
   position: fixed;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 `;
 export const Button = styled.button`
@@ -35,7 +35,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: flex-start;
 
-  position: fixed;
+  position: relative;
   padding: 20px;
   max-width: 1200px;
   flex-direction: row-reverse;

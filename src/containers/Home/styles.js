@@ -7,7 +7,11 @@ import  styled  from "styled-components";
 
 export const Div = styled.div`
 
-z-index: -90;
+display: flex;
+flex-direction: column;
+position: relative;
+z-index:0;
+
 
 
 `
