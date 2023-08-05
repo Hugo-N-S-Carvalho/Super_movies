@@ -21,9 +21,11 @@ function Modal({movieId, setShowModal}){
  
   return (
     <Background onClick={() => setShowModal(false)}>   
+    
     {movie && (
-       <Container>
-        <Button onClick={() => setShowModal(false)}><PiBackspaceDuotone/></Button>
+     
+       <Container >
+         <Button onClick={() => setShowModal(false)}><PiBackspaceDuotone/></Button>
       <iframe src={`https://www.youtube.com/embed/${movie.key}`}
       title='Youtube Vídeo Player'
       height={'500px'}

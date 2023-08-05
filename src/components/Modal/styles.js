@@ -12,9 +12,9 @@ export const Background = styled.div`
   justify-content: center;
 `;
 export const Button = styled.button`
-  height: 2em;
-  width: 5%;
-  
+  height: 1em;
+  width: 1em;
+  z-index: 99999;
   background-color: rgba(0, 0, 0, );
 
   position: fixed;
@@ -30,8 +30,8 @@ export const Button = styled.button`
 
 export const Container = styled.div`
   background: #000000;
-  height: 60%;
-  width: 100%;
+  height: auto;
+  width: 100vw;
   display: flex;
   justify-content: flex-start;
 
@@ -44,15 +44,17 @@ margin-top: 20%;
   iframe{
     border:none;
     width: 120%;
-    min-height: 100%;
+    max-height: 100%;
   }
 
   @media screen and (max-width: 768px) {
-    
+    height: 40%;
     margin-top: 0;
     iframe {
       min-width: 100%;
-      min-height: 100%;
+      max-height: 100%;
+      height:100%;
+
     }
   }
 `;
