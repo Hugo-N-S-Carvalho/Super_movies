@@ -48,12 +48,14 @@ margin-top: 20%;
   }
 
   @media screen and (max-width: 768px) {
-    height: 40%;
-    margin-top: 0;
+    height: 40vh;
+    width:100vw;
+    margin-top: 350px;
     iframe {
       min-width: 100%;
-      max-height: 100%;
+      min-height: 100%;
       height:100%;
+      width: 100%;
 
     }
   }
