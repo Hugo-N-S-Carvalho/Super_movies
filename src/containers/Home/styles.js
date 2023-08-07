@@ -115,7 +115,7 @@ export const Info = styled.div`
 z-index: 2;
 padding: 20px;
 width: 50%;
-
+text-align: left;
 
 
 h1{
@@ -139,7 +139,7 @@ p{
     color: #ffffff;
     margin-top:30px;
     margin-bottom: 20px;
-
+    
     @media (max-width: 768px) {
   margin: 20px 20px;
   
@@ -151,7 +151,7 @@ p{
       width: 100vw;
     max-height: 30vh;
     padding: 0px 50px;
-    text-align: justify;
+    
         
       }
 
