@@ -40,7 +40,7 @@ position: relative;
     left: 0;
     width:100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5)
+    background-color: rgba(0, 0, 0, 0.7)
 }
 @media (max-width: 768px) {
   max-width: 100vw;

@@ -63,3 +63,17 @@ export async function getMovies(movieId){
     
     return results[0]
 }
+
+
+
+
+export async function getMoviesPopular(){
+    
+    const {data: {results}} = await api.get(`/movie/popular`);
+   
+    
+    return results
+}
+
+
+

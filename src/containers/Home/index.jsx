@@ -7,7 +7,7 @@ import Button from "../../components/Button";
 import Slider from "../../components/Slider";
 import { getImages } from "../../utils/getImages";
 import Modal from "../../components/Modal";
-import { getMovie, getPopularPerson, getPopularSeries, getTopMovies, getTopSeries } from "../../services/getData";
+import { getMovie, getMoviesPopular, getPopularPerson, getPopularSeries, getTopMovies, getTopSeries, } from "../../services/getData";
 
 
 function Home() {
@@ -22,6 +22,8 @@ function Home() {
   const [popularSeries, setPopularSeries] = useState();
 
   const [popularPerson, setPopularPerson] = useState();
+
+  const [moviesPopular, setmoviesPopular] = useState();
 const navigate = useNavigate()
 
 
@@ -35,14 +37,15 @@ Promise.all([
   getTopMovies(),
   getTopSeries(),
   getPopularSeries(),
-  getPopularPerson()
-
-]).then(([movie, topMovies, topSeries, popularSeries, popularPerson]) => {
+  getPopularPerson(),
+  getMoviesPopular()
+]).then(([movie, topMovies, topSeries, popularSeries, popularPerson, moviesPopular]) => {
   setMovie(movie)
     setTopMovies(topMovies)
     setTopSeries(topSeries)
     setPopularSeries(popularSeries)
     setPopularPerson(popularPerson)
+    setmoviesPopular(moviesPopular)
 })
 .catch((error) => console.error(error))
 
@@ -92,7 +95,7 @@ Promise.all([
      
       <div >
       
-       
+      {moviesPopular && <Slider info={moviesPopular} title={'Filmes Populares'} />}
      {topMovies && <Slider info={topMovies} title={'Top Filmes'} />}
      {topSeries && <Slider info={topSeries} title={'Top Séries'} />}
      {popularSeries && <Slider info={popularSeries} title={'Séries Populares'} />}
