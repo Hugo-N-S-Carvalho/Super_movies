@@ -9,6 +9,7 @@ import { getImages } from "../../utils/getImages";
 import Modal from "../../components/Modal";
 import { getMovie, getPopularPerson, getPopularSeries, getTopMovies, getTopSeries } from "../../services/getData";
 
+
 function Home() {
 
   const [showModal, setShowModal] = useState(false);
@@ -65,6 +66,7 @@ Promise.all([
   return (
     <>
    <Div >
+    
       {movie && (
         <Background img= {getImages(movie.backdrop_path)}>
            <Container>
@@ -85,12 +87,17 @@ Promise.all([
           </Container>
         </Background>
       )}
+      
       {showModal &&  <Modal movieId={movie.id} setShowModal={setShowModal} />}
+     
+      <div >
+      
        
      {topMovies && <Slider info={topMovies} title={'Top Filmes'} />}
      {topSeries && <Slider info={topSeries} title={'Top Séries'} />}
      {popularSeries && <Slider info={popularSeries} title={'Séries Populares'} />}
      {popularPerson && <Slider info={popularPerson} title={'Atores Populares'} />}
+     </div>
      </Div>
     </>
   );
