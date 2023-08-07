@@ -18,7 +18,7 @@ align-items: center;
 img{
 
 border-radius: 30px;
-width: 300px;
+width: 15em;
 height: 100%;
 
 }
@@ -28,6 +28,7 @@ h3{
 
 color: #ffffff;
 margin-top: 15px;
+
 }
 
 `

@@ -9,8 +9,11 @@ function Slider({info, title }){
 
 return (
 
+
 <Container>
+  
 <h2>{title}</h2>
+
 <Swiper grabCursor={true} spaceBetween={10} slidesPerView={'auto'} className='swiper' >
 
 {Array.isArray(info) && info.map((item, index) => (
