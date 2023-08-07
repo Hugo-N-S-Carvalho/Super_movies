@@ -19,7 +19,7 @@ img{
 
 border-radius: 30px;
 width: 15em;
-height: 100%;
+height: 50%;
 
 }
 

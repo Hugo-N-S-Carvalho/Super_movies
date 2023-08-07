@@ -27,12 +27,45 @@ h2{
    width: 100vh;
 }
 
-.swiper-wrapper{
-    display: flex;
 
 
+
+
+
+.swiper {
+  width: 100%;
+  padding-top: 50px; 
+   padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: right;
+  background-size: cover;
+  width: 250px;
+  height: 400px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 10em;
+  height: 20em;
 }
 
 
 
+&::-webkit-scrollbar {
+    height:5px; /* Largura da barra de rolagem */
+    width: 5px;
+  }
+
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent; /* Fundo transparente */
+  }
+
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Cor do "thumb" transparente */
+    border-radius: 5px; /* Borda arredondada para o "thumb" */
+  }
 `
