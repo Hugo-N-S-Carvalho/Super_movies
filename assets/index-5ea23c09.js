@@ -336,7 +336,15 @@ h2{
   height: 20em;
 }
 
+.swiper-3d {
+    perspective: 600px;
 
+
+
+    @media (max-width: 768px) {
+  perspective: 200px;
+  }
+}
 
 &::-webkit-scrollbar {
     height:5px; /* Largura da barra de rolagem */
