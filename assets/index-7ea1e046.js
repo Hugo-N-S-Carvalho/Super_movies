@@ -296,12 +296,20 @@ z-index:1;
 background: #000000;
 padding: 0 20px;
 overflow: auto;
+/* height: 300px; */
+
+
+
+
+
+
 
 
 h2{
     color: #ffffff;
     font-size: 24px;
     margin: 50px 0 20px 20px;
+   width: 100vh;
 }
 
 .swiper-wrapper{
@@ -323,7 +331,7 @@ align-items: center;
 img{
 
 border-radius: 30px;
-width: 300px;
+width: 15em;
 height: 100%;
 
 }
@@ -333,6 +341,7 @@ h3{
 
 color: #ffffff;
 margin-top: 15px;
+
 }
 
 `;function ga(e){return`https://image.tmdb.org/t/p/original${e}`}function Dh({item:e}){return R.jsxs(kw,{children:[R.jsx("img",{src:ga(e.poster_path||e.profile_path||"")}),R.jsx("h3",{children:e.title||e.name})]})}Dh.propTypes={item:En.object.isRequired};function Nn({info:e,title:t}){return R.jsxs(Xy,{children:[R.jsx("h2",{children:t}),R.jsx(Ah,{grabCursor:!0,spaceBetween:10,slidesPerView:"auto",className:"swiper",children:Array.isArray(e)&&e.map((n,r)=>R.jsx(jh,{children:R.jsx(Dh,{item:n})},r))})]})}Nn.propTypes={info:En.array.isRequired,title:En.string.isRequired};const _w=pe.div`
