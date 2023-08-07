@@ -52,7 +52,7 @@ h2{
 }
 
 .swiper-3d {
-    perspective: 600px;
+    perspective: 1000px;
 
 
 
