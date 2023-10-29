@@ -111,12 +111,13 @@ width: 50%;
 text-align: left;
 
 
+
 h1{
 
 font-size: 200%;
 font-weight: 700;
 color: #ffffff;
-
+max-height: 100px;
 @media (max-width: 768px) {
   margin: 20px 20px;
   
@@ -132,9 +133,10 @@ p{
     color: #ffffff;
     margin-top:30px;
     margin-bottom: 20px;
-    
+    max-height: 100px;
     @media (max-width: 768px) {
   margin: 20px 20px;
+
   
 }
     }
