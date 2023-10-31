@@ -21,8 +21,8 @@ const buttonStyles = css`
     white-space: nowrap;
     overflow: hidden;
     max-width: 100%;
-    font-size: 3vw;
-    height: 2em;
+    font-size: 2vw;
+    height: 6vh;
 }
 
 

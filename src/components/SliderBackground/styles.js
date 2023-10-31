@@ -11,7 +11,7 @@ display: flex;
 flex-direction: column;
 position: relative;
 z-index:0;
-
+overflow: hidden;
 
 
 `
@@ -32,7 +32,7 @@ position: relative;
   overflow: hidden;
   z-index: 0;
   min-height:50vh;
-
+  
 &::before{
     content: '';
     position: absolute;
@@ -99,12 +99,13 @@ display: flex;
     margin: 0 auto;
     padding: 100px 0px;
 
+   
 
 @media (max-width: 768px) {
     flex-direction: column-reverse;
     padding: 100px;
-  }
-
+    
+    }
 `
 
 
@@ -120,7 +121,7 @@ text-align: left;
 
 h1{
 
-font-size: 200%;
+font-size:  200%;
 font-weight: 700;
 color: #ffffff;
 

@@ -15,7 +15,7 @@ function Slider({ info, title }) {
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
-        centeredSlides={true}
+        centeredSlides={false}
         slidesPerView={'auto'}
         coverflowEffect={{
           rotate: 50,
