@@ -50,7 +50,7 @@ export const Container = styled.div`
   @media screen and (max-width: 768px) {
     height: 40vh;
     width:100vw;
-    margin-top: 250px;
+    /* margin-top: 250px; */
     iframe {
       min-width: 100%;
       min-height: 100%;

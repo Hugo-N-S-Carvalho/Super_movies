@@ -31,7 +31,7 @@ justify-content: center;
 position: relative;
   overflow: hidden;
   z-index: 0;
-  min-height:50vh;
+  min-height: 50vh;
   
 &::before{
     content: '';
@@ -262,8 +262,8 @@ z-index:1;
 }
 
 .swiper {
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .swiper-slide {
@@ -279,8 +279,8 @@ z-index:1;
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
   object-fit: cover;
 }
 
@@ -289,8 +289,8 @@ z-index:1;
   right: 16px;
   bottom: 16px;
   z-index: 10;
-  width: 48px;
-  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -304,8 +304,8 @@ z-index:1;
   left: 0;
   top: 0px;
   z-index: 10;
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
   stroke-width: 4px;
   stroke: var(--swiper-theme-color);
   fill: none;

@@ -19,19 +19,19 @@ display: flex;
 align-items: center;
 justify-content: center;
 gap: 10%;
-
+object-fit: cover;
 position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   z-index: 0;
-  min-height:50vh;
-min-width: 100vw;
+  min-height: 70vh;
+min-width: 100%;
 &::before{
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width:100%;
-    height: 100%;
+    min-width:100%;
+    min-height: 100%;
     background-color: rgba(0, 0, 0, 0.7)
 }
 
@@ -61,7 +61,7 @@ display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 100%;
-    max-width: 1500px;
+    min-width: 100%;
     margin: 0 auto;
     background-size: contain;
 
