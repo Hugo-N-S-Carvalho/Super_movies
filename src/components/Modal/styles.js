@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const Background = styled.div`
-  min-height: 200%;
+  min-height: 100%;
   width: 100vw;
   z-index: 9999;
   background-color: rgba(0, 0, 0, 0.7);
 
   position: fixed;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 `;
 export const Button = styled.button`
@@ -40,7 +40,7 @@ export const Container = styled.div`
   max-width: 1200px;
   flex-direction: row-reverse;
     align-items: flex-start;
-margin-top: 20%;
+
   iframe{
     border:none;
     width: 120%;

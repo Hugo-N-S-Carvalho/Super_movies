@@ -18,12 +18,13 @@ background-size: cover;
 display: flex;
 align-items: center;
 justify-content: center;
+gap: 10%;
 
 position: relative;
   overflow: hidden;
   z-index: 0;
   min-height:50vh;
-width: 100vw;
+min-width: 100vw;
 &::before{
     content: '';
     position: absolute;
@@ -46,6 +47,7 @@ width: 100vw;
 flex-direction: column-reverse;
 position: relative;
 justify-content: flex-end;
+gap: 2%;
   }
 
 
