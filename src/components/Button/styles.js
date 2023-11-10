@@ -22,7 +22,7 @@ const buttonStyles = css`
     overflow: hidden;
     max-width: 100%;
     font-size: 2vw;
-    height: 6vh;
+    height: 3vh;
 }
 
 
