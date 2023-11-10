@@ -341,14 +341,14 @@ margin-top: 15px;
 }
 
 `;function ya(e){return`https://image.tmdb.org/t/p/original${e}`}function Hh({item:e}){return N.jsxs(Nw,{children:[N.jsx("img",{src:ya(e.poster_path||e.profile_path||"")}),N.jsx("h3",{children:e.title||e.name})]})}Hh.propTypes={item:at.object.isRequired};function Nn({info:e,title:t}){return N.jsxs(Rw,{children:[N.jsx("h2",{children:t}),N.jsx(Iu,{effect:"coverflow",grabCursor:!0,centeredSlides:!1,slidesPerView:"auto",coverflowEffect:{rotate:50,stretch:0,depth:100,modifier:1,slideShadows:!0},pagination:!0,modules:[Tw,jh],className:"mySwiper",children:Array.isArray(e)&&e.map((n,r)=>N.jsx(Au,{children:N.jsx(Hh,{item:n})},r))})]})}Nn.propTypes={info:at.array.isRequired,title:at.string.isRequired};const Mw=se.div`
-  min-height: 200%;
+  min-height: 100%;
   width: 100vw;
   z-index: 9999;
   background-color: rgba(0, 0, 0, 0.7);
 
   position: fixed;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 `,zw=se.button`
   height: 1em;
@@ -377,7 +377,7 @@ margin-top: 15px;
   max-width: 1200px;
   flex-direction: row-reverse;
     align-items: flex-start;
-margin-top: 20%;
+
   iframe{
     border:none;
     width: 120%;
@@ -387,7 +387,7 @@ margin-top: 20%;
   @media screen and (max-width: 768px) {
     height: 40vh;
     width:100vw;
-    margin-top: 250px;
+    /* margin-top: 250px; */
     iframe {
       min-width: 100%;
       min-height: 100%;
@@ -452,12 +452,13 @@ background-size: cover;
 display: flex;
 align-items: center;
 justify-content: center;
+gap: 10%;
 
 position: relative;
   overflow: hidden;
   z-index: 0;
   min-height:50vh;
-width: 100vw;
+min-width: 100vw;
 &::before{
     content: '';
     position: absolute;
@@ -480,6 +481,7 @@ width: 100vw;
 flex-direction: column-reverse;
 position: relative;
 justify-content: flex-end;
+gap: 2%;
   }
 
 
