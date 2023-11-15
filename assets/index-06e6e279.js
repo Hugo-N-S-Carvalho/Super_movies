@@ -586,12 +586,14 @@ p{
 
 `,hx=se.div`
 z-index: 2;
-max-width: 13em;
-max-height: 20em;
+max-width: 20vw;
+min-width: 15vw;
+max-height: 30em;
 border-radius: 40px;
 overflow: hidden; /* Adicionamos um overflow para esconder qualquer conteúdo que ultrapasse o limite do Poster */
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adicionamos uma sombra para dar destaque ao poster */
 margin-top: 20px;
+
 img {
 
     width: 15em;
@@ -606,7 +608,7 @@ img {
 
 
 @media (max-width: 768px) {
-    max-width: 50vh;
+    max-width: 50vw;
 max-height: 30vh;
 margin-top: 100px;
 margin-right: 50px;
