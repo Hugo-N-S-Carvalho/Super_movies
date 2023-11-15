@@ -36,10 +36,7 @@ min-width: 100%;
 }
 
 
-
-
-
-@media (max-width: 620px) {
+@media (max-width: 720px) {
   max-width: 100vw;
     width: 100vw;
     height: 80vh;
@@ -49,6 +46,18 @@ position: relative;
 justify-content: flex-end;
 gap: 2%;
   }
+
+
+/* @media (max-width: 620px) {
+  max-width: 100vw;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+flex-direction: column-reverse;
+position: relative;
+justify-content: flex-end;
+gap: 2%;
+  } */
 
 
   
