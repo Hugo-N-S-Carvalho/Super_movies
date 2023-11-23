@@ -56,7 +56,7 @@ export async function getPopularPerson(){
 
 
 
-export async function getMovies(movieId){
+export async function getMovieVideo(movieId){
     
     const {data: {results}} = await api.get(`/movie/${movieId}/videos`);
    
@@ -77,3 +77,38 @@ export async function getMoviesPopular(){
 
 
 
+
+export async function getMoviesVideos(movieId){
+    
+    const {data: {results}} = await api.get(`/movie/${movieId}/videos`);
+   
+    
+    return results
+}
+
+
+
+export async function getMovieCredits(movieId){
+    
+    const {data} = await api.get(`/movie/${movieId}/credits`);
+   
+    
+    return data
+}
+
+
+export async function getMovieSimilar(movieId){
+    
+    const {data: {results}} = await api.get(`/movie/${movieId}/similar`);
+   
+    
+    return results
+}
+
+export async function getMovieById(movieId){
+    
+    const {data} = await api.get(`/movie/${movieId}`);
+   
+    
+    return data
+}

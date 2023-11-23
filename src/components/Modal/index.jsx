@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Container, Background, Button } from './styles';
 import { useEffect, useState } from 'react';
 
-import { getMovies } from '../../services/getData';
+import { getMovieVideo,  } from '../../services/getData';
 import { PiBackspaceDuotone } from "react-icons/pi";
 
 function Modal({movieId, setShowModal}){
@@ -11,7 +11,7 @@ function Modal({movieId, setShowModal}){
 
   useEffect(()=>{
     async function getMoviesVideo() {
-     setMovie(await getMovies(movieId))
+     setMovie(await getMovieVideo(movieId))
     }
 
 
