@@ -788,7 +788,15 @@ h2{
     font-size: 50px;
     font-weight: 700;
     color: #ffffff;
-    
+
+}
+
+p{
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-justify: inter-word;
 }
 
 `,Ix=X.div`
@@ -862,7 +870,7 @@ max-height: 30vh;
 
 
 
-`;function bx(){const{id:e}=x0(),[t,n]=P.useState(),[r,i]=P.useState(),[s,o]=P.useState(),[a,l]=P.useState(),[u,d]=P.useState();return P.useEffect(()=>{async function f(){Promise.all([dm(e),cx(e),lx(e),ax(e),ux(e)]).then(([m,g,y,v,x])=>{console.log([m,g,y,v,x]),n(m),i(g),o(y),l(v),d(x)}).catch(m=>console.error(m))}f()},[]),R.jsxs(R.Fragment,{children:[r&&R.jsx(Ix,{image:ci(r.backdrop_path)}),R.jsxs(Nx,{children:[r&&R.jsx(Ax,{children:R.jsx("img",{src:ci(r.poster_path)})}),R.jsxs(zx,{children:[R.jsx("h2",{}),R.jsx("div",{children:"Gêneros"}),R.jsx("p",{}),R.jsx("div",{children:"Credits"})]})]})]})}function $x(){return R.jsx(b0,{children:R.jsxs(Rn,{path:"/super_movies/",element:R.jsx(Rx,{}),children:[R.jsx(Rn,{path:"/super_movies/",element:R.jsx(Cx,{})}),R.jsx(Rn,{path:"/super_movies/filmes",element:R.jsx(Tx,{})}),R.jsx(Rn,{path:"/super_movies/series",element:R.jsx(kx,{})}),R.jsx(Rn,{path:"/super_movies/detalhe/:id",element:R.jsx(bx,{})})]})})}const jx=Yy`
+`;function bx(){const{id:e}=x0(),[t,n]=P.useState(),[r,i]=P.useState(),[s,o]=P.useState(),[a,l]=P.useState(),[u,d]=P.useState();return P.useEffect(()=>{async function f(){Promise.all([dm(e),cx(e),lx(e),ax(e),ux(e)]).then(([m,g,y,v,x])=>{console.log([m,g,y,v,x]),n(m),i(g),o(y),l(v),d(x)}).catch(m=>console.error(m))}f()},[]),R.jsxs(R.Fragment,{children:[r&&R.jsx(Ix,{image:ci(r.backdrop_path)}),R.jsxs(Nx,{children:[r&&R.jsx(Ax,{children:R.jsx("img",{src:ci(r.poster_path)})}),R.jsxs(zx,{children:[R.jsx("h2",{children:r==null?void 0:r.title}),R.jsx("div",{children:"Gêneros"}),R.jsx("p",{children:r==null?void 0:r.overview}),R.jsx("div",{children:"Credits"})]})]})]})}function $x(){return R.jsx(b0,{children:R.jsxs(Rn,{path:"/super_movies/",element:R.jsx(Rx,{}),children:[R.jsx(Rn,{path:"/super_movies/",element:R.jsx(Cx,{})}),R.jsx(Rn,{path:"/super_movies/filmes",element:R.jsx(Tx,{})}),R.jsx(Rn,{path:"/super_movies/series",element:R.jsx(kx,{})}),R.jsx(Rn,{path:"/super_movies/detalhe/:id",element:R.jsx(bx,{})})]})})}const jx=Yy`
 
 *{
 
