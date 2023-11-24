@@ -76,13 +76,13 @@ return (
                 <Info>
 
                     <h2>
-                       {/* {movieById.title}  */}
+                       {movieById?.title} 
                     </h2>
                     <div>
                         Gêneros
                     </div>
                     <p>
-                        {/* {movieById.overview} */}
+                        {movieById?.overview}
                     </p>
                     <div>
                         Credits

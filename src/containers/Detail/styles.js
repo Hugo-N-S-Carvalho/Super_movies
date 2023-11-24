@@ -39,7 +39,15 @@ h2{
     font-size: 50px;
     font-weight: 700;
     color: #ffffff;
-    
+
+}
+
+p{
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-justify: inter-word;
 }
 
 `
