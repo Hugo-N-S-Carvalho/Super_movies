@@ -1,8 +1,19 @@
-import  styled  from "styled-components";
+import  styled, { keyframes }  from "styled-components";
 
 
 
+const scale = keyframes`
 
+from{
+
+    transform: scale(0);
+}
+
+to{
+    transform: scale(1);
+}
+
+`
 
 
 
@@ -33,6 +44,21 @@ min-width: 100%;
     min-width:100%;
     min-height: 100%;
     background-color: rgba(0, 0, 0, 0.7)
+}
+
+
+&::after{
+
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 150px;
+background-image: linear-gradient(to top, #0f0f0f, rgba(0, 0, 0, 0));
+/* z-index: 99; */
+background-repeat: no-repeat;
+
 }
 
 
@@ -185,11 +211,11 @@ margin-top: 20px;
 
 img {
 
-    width: 15em;
+    width: 100%;
     height: 25em;
-  
-    object-fit: cover;
+    animation: ${scale} 0.5s linear;
     
+    background-size: cover;
 }
 
 

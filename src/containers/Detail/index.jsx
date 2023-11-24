@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react';
-import {  Container, VideoBackground } from './styles';
+import {  Background, Container, Cover,  } from './styles';
 import { getMovieById, getMovieCredits, getMovieSimilar, getMovieVideo, getMoviesVideos } from '../../services/getData';
 import { useParams } from 'react-router-dom';
 import { getImages } from '../../utils/getImages';
@@ -12,7 +12,7 @@ function Detail(){
 
 const [movieVideo, setMovieVideo] = useState()
 
-const [movieMovieById, setMovieById] = useState()
+const [movieById, setMovieById] = useState()
 
 const [moviesVideos, setMoviesVideos] = useState()
 
@@ -60,21 +60,21 @@ const [moviesSimilar, setMoviesSimilar] = useState()
 
 return (
 <>
-{movieMovieById && 
-                <VideoBackground>
-                    <iframe 
-                        src={`https://www.youtube.com/embed/${movieVideo.key}?autoplay=1&mute=1&loop=1&playlist=${movieVideo.key}&controls=0&modestbranding=1&rel=0&showinfo=0`}
-                        frameBorder='0'
-                        allow='autoplay; encrypted-media'
-                        allowFullScreen
-                        
-                    />
-                </VideoBackground>
-            }
+ {movieById && 
+                <Background image={getImages(movieById.backdrop_path)} /> }
+                   
+                    
+             
+            
             <Container>
                 <div>Detalhe</div>
-            </Container>
+                {movieById && 
 
+                <Cover>
+                    <img src={getImages(movieById.poster_path)}/>
+                </Cover>}
+            </Container>
+           
 
 </>
 )
