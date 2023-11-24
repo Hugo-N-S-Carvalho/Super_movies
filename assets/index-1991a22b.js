@@ -628,12 +628,12 @@ border-radius: 40px;
 overflow: hidden; /* Adicionamos um overflow para esconder qualquer conteúdo que ultrapasse o limite do Poster */
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adicionamos uma sombra para dar destaque ao poster */
 margin-top: 20px;
+animation: ${vx} 0.5s linear;
 
 img {
 
     width: 100%;
     height: 25em;
-    animation: ${vx} 0.5s linear;
     
     background-size: cover;
 }
