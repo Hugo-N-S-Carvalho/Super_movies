@@ -27,6 +27,22 @@ margin-top: -100px;
 
 `
 
+export const Info = styled.div`
+padding: 20px;
+width: 50%;
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+
+
+h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffffff;
+    
+}
+
+`
 
 
 export const Background = styled.div`
@@ -69,25 +85,36 @@ background-repeat: no-repeat;
 }
 
 
+
+
 `
 export const Cover = styled.div`
  
 padding: 20px;
 display: flex;
 align-items: flex-start;
-height: 100%;
+max-height: auto;
+max-width: 350px;
 
 
 
 img{
 
-    width: 450px;
+    width: 100%;
+    object-fit: cover;
     border-radius: 50px;
     box-shadow: rgb(100 100 11/20%) 0px 7px 29px 0px;
 animation: ${scale} 0.5s linear;
 
 
 }
+
+@media (max-width: 768px) {
+    max-width: 35vw;
+max-height: 30vh;
+
+    }
+
 
 
 `

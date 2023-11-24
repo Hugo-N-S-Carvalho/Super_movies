@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react';
-import {  Background, Container, Cover,  } from './styles';
+import {  Background, Container, Cover, Info,  } from './styles';
 import { getMovieById, getMovieCredits, getMovieSimilar, getMovieVideo, getMoviesVideos } from '../../services/getData';
 import { useParams } from 'react-router-dom';
 import { getImages } from '../../utils/getImages';
@@ -67,12 +67,27 @@ return (
              
             
             <Container>
-                <div>Detalhe</div>
+                
                 {movieById && 
 
                 <Cover>
                     <img src={getImages(movieById.poster_path)}/>
                 </Cover>}
+                <Info>
+
+                    <h2>
+                       {/* {movieById.title}  */}
+                    </h2>
+                    <div>
+                        Gêneros
+                    </div>
+                    <p>
+                        {/* {movieById.overview} */}
+                    </p>
+                    <div>
+                        Credits
+                    </div>
+                </Info>
             </Container>
            
 
