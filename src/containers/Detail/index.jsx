@@ -4,6 +4,8 @@ import {  Background, Container, Cover, Info,  } from './styles';
 import { getMovieById, getMovieCredits, getMovieSimilar, getMovieVideo, getMoviesVideos } from '../../services/getData';
 import { useParams } from 'react-router-dom';
 import { getImages } from '../../utils/getImages';
+import SpanGenres from '../../components/SpanGenres';
+import Credits from '../../components/Credits';
 
 
 
@@ -78,14 +80,18 @@ return (
                     <h2>
                        {movieById?.title} 
                     </h2>
-                    <div>
-                        Gêneros
-                    </div>
+                    {movieById &&
+                    <SpanGenres genres={movieById.genres} />}
+                    
                     <p>
                         {movieById?.overview}
                     </p>
                     <div>
-                        Credits
+{movieById &&                       
+ <Credits credits={moviesCredits}/>
+
+}
+
                     </div>
                 </Info>
             </Container>
