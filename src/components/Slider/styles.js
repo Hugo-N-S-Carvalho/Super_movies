@@ -33,9 +33,12 @@ h2{
 
 
 .swiper {
+ 
   width: 100%;
   padding-top: 50px; 
    padding-bottom: 50px;
+  
+ 
 }
 
 .swiper-slide {
@@ -43,12 +46,14 @@ h2{
   background-size: cover;
   width: 250px;
   height: 400px;
+  
 }
 
 .swiper-slide img {
   display: block;
   width: 10em;
   height: 20em;
+  
 }
 
 .swiper-3d {

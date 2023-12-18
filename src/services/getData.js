@@ -112,3 +112,14 @@ export async function getMovieById(movieId){
     
     return data
 }
+
+export async function getMovieNow(){
+    
+    const {data:{results}} = await api.get(`/movie/now_playing`);
+    
+   
+
+    return results
+}
+
+

@@ -127,6 +127,47 @@ max-height: 30vh;
 
 `
 
+export const ContainerMovies = styled.div`
+ 
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 20px;
+width: 100%;
+
+
+div{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 100%;
+    height: 100%;
+    margin: 50px 0;
+border-radius: 30px;
+}
+
+
+h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+iframe{
+    border: none;
+    border-radius: 30px;
+}
+
+`
+
+
+export const ProviderName = styled.p`
+  color: #fff;
+  font-size: 12px;
+`;
+
 
 
 

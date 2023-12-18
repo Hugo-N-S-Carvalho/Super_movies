@@ -34,7 +34,7 @@ export const Container = styled.div`
   width: 100vw;
   display: flex;
   justify-content: flex-start;
-
+border-radius: 30px;
   position: relative;
   padding: 20px;
   max-width: 1200px;
@@ -45,6 +45,8 @@ export const Container = styled.div`
     border:none;
     width: 120%;
     max-height: 100%;
+    border-radius: 30px;
+   
   }
 
   @media screen and (max-width: 768px) {

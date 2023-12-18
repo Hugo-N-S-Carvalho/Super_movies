@@ -8,7 +8,7 @@ export const Container = styled.div`
   
   margin-top: 30px;
   gap: 10px;
-overflow: auto;
+
 
   div{
 display: flex;

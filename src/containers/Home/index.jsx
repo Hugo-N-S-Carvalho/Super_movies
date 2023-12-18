@@ -37,7 +37,7 @@ const handleShowModal = (selectedMovie) => {
 useEffect(()=>{
   async function getAllData() {
    
-// console.time('time')
+
 
 Promise.all([
   getMovie(),
@@ -58,7 +58,7 @@ Promise.all([
 
 
 
-    // console.timeEnd('time')
+    
   }
 
 
