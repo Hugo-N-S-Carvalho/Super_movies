@@ -22,7 +22,10 @@ export const Container = styled.div`
 max-width: 1500px;
 margin-top: -100px;
 
-
+@media (max-width: 768px) {
+    max-width: 100%;
+    margin-top: 0;
+  }
 
 
 `
