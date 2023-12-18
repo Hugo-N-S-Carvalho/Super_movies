@@ -960,6 +960,9 @@ max-width: 1500px;
 margin-top: -100px;
 
 @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+align-items: center;
     max-width: 100%;
     margin-top: 0;
     margin-top: -100px;
