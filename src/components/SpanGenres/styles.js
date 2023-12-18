@@ -4,9 +4,10 @@ export const Container = styled.div`
 
   
 display: flex;
+flex-wrap: wrap;
 margin-top: 30px;
 gap: 10px;
-
+width: 100%;
 
 span{
   padding:8px 18px;
@@ -19,6 +20,7 @@ span{
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 `;
 
