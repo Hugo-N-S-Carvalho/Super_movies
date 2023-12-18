@@ -19,7 +19,7 @@ export default function CardBackground({ movie, handleShowModal  }) {
           <p>{movie.overview}</p>
           <ContainerButtons className="container-buttons">
             <Button onClick={() => navigate(`/super_movies/detalhe/${movie.id}`)} red={true}>
-              Assista Agora
+              Detalhes
             </Button>
             <Button onClick={() => handleShowModal(movie)} red= {false} >Assista ao Trailer</Button>
             
