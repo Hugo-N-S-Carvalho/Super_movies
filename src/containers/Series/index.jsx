@@ -8,7 +8,7 @@ import { Div, MoviesContainer} from "./styles";
 import Slider from "../../components/Slider";
 // import { getImages } from "../../utils/getImages";
 import Modal from "../../components/Modal";
-import { getMovieNow,   getMovie, getMoviesPopular,  getTopMovies,  getMoviesUpComing, getDiscoverSeries} from "../../services/getData";
+import { getMovieNow,   getMovie, getMoviesPopular,  getTopMovies,   getDiscoverSeries} from "../../services/getData";
 
 import SliderBackground from "../../components/SliderBackground";
 import Card from "../../components/Card";
@@ -42,7 +42,7 @@ const [discoverSeries, setDiscoverSeries] = useState();
 
   const [movieNow, setMovieNow] = useState();
 // const navigate = useNavigate()
-const [moviesUpComing, setMoviesUpComing] = useState();
+
 
 const handleShowModal = (selectedMovie) => {
   setMovie(selectedMovie);
@@ -64,7 +64,7 @@ useEffect(()=>{
       getTopMovies(),
       getMoviesPopular(),
       getMovieNow(),
-     getMoviesUpComing(),
+     
      getDiscoverSeries()
     ]).then(([discoverSeries, movie, movies, topMovies, moviesPopular,movieNow, moviesUpComing ]) => {
         setDiscoverSeries(discoverSeries)
@@ -78,7 +78,7 @@ console.log('series:', discoverSeries)
    
     setmoviesPopular(moviesPopular)
     setMovieNow(movieNow)
-    setMoviesUpComing(moviesUpComing)
+    
 
     console.log(moviesUpComing)
 })
