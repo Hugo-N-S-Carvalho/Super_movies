@@ -15,12 +15,12 @@ function Router() {
   return (
     <Routes>
      
-      <Route path="/cine_code/" element={<DefaultLayout />}>
+      <Route path="/" element={<DefaultLayout />}>
         <Route path="/cine_code/" element={<Home />} />
         <Route path="/cine_code/filmes" element={<Movies />} />
         <Route path="/cine_code/series" element={<Series />} />
         <Route path="/cine_code/detalhe/:id" element={<Detail />} />
-        {/* <Route path="/super_movies/teste" element={<Teste />}/> */}
+        
       </Route>
     </Routes>
   );

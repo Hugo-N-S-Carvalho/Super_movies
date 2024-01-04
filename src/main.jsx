@@ -10,7 +10,7 @@ import { StyleSheetManager } from 'styled-components';
 ReactDOM.createRoot(document.getElementById('root')).render(
  
  <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/'>
     <StyleSheetManager shouldForwardProp={(prop) => prop === 'img'}>
     </StyleSheetManager>
     <Router/>
