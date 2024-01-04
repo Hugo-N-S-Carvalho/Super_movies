@@ -1,7 +1,8 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-  min-height: 100px;
+  min-height: 50px;
+  max-height: 150px;
   width: 100vw;
   z-index: 99;
   position: fixed;
