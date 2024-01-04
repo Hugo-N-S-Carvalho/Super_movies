@@ -1067,7 +1067,8 @@ justify-content: space-around;
 width: 100vw;
 
 `;function IS(){const e={width:"150px",margin:"0 50px"},[t,n]=T.useState(),[r,i]=T.useState(!1),[o,s]=T.useState(),[a,l]=T.useState([]),[u,d]=T.useState(),[f,m]=T.useState(),[g,y]=T.useState(),[v,S]=T.useState(),h=c=>{s(c),i(!0)};return T.useEffect(()=>{async function c(){Promise.all([fi(!0),fi(!1),Gu(),qu(),gm(),vm(),mS()]).then(([p,w,x,C,E,_,k])=>{n(p),s(w),l(x),console.log("movie:",w),console.log("movies:",x),console.log("series:",p),d(C),m(E),y(_),S(k),console.log(k)}).catch(p=>console.error(p))}c()},[]),P.jsx(P.Fragment,{children:P.jsxs(zS,{children:[r&&P.jsx(Cs,{movieId:o.id,setShowModal:i}),P.jsxs("div",{children:[P.jsx("div",{children:t&&P.jsx(Ts,{movies:t,handleShowModal:h})}),g&&P.jsx(Fe,{info:g,title:"Filmes Em Cartaz"}),f&&P.jsx(Fe,{info:f,title:"Filmes Populares"}),u&&P.jsx(Fe,{info:u,title:"Top Filmes"}),P.jsx(NS,{children:a&&a.map(c=>P.jsx(gs,{item:c,style:e},c.id))})]})]})})}const bS=D.div`
-  min-height: 100px;
+  min-height: 50px;
+  max-height: 150px;
   width: 100vw;
   z-index: 99;
   position: fixed;
