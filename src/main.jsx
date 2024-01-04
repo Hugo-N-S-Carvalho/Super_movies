@@ -7,10 +7,12 @@ import  CreateGlobalStyle  from './styles/globalStyles.js'
 import { StyleSheetManager } from 'styled-components';
 
 
+const subdomain = 'cine_code'
+
 ReactDOM.createRoot(document.getElementById('root')).render(
  
  <React.StrictMode>
-    <BrowserRouter basename='/'>
+    <BrowserRouter basename={`/${subdomain}/`}>
     <StyleSheetManager shouldForwardProp={(prop) => prop === 'img'}>
     </StyleSheetManager>
     <Router/>
