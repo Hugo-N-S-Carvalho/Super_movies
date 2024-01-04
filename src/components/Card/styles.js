@@ -8,6 +8,8 @@ import styled from "styled-components"
 
 
 export const Container = styled.div`
+
+${props => props.style} 
 display: flex;
 flex-direction: column;
 justify-content: center;

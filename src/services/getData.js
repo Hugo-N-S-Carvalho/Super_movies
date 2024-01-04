@@ -1,12 +1,16 @@
 import api from "./api";
 
 
-export async function getMovie(){
+export async function getMovie(single = true){
 
     const {data: {results}} = await api.get("/movie/popular");
     
+    if(single){
 
     return results[0]
+    }
+
+    return results
 }
 
 
@@ -116,6 +120,25 @@ export async function getMovieById(movieId){
 export async function getMovieNow(){
     
     const {data:{results}} = await api.get(`/movie/now_playing`);
+    
+   
+
+    return results
+}
+
+
+export async function getMoviesUpComing(){
+    
+    const {data:{results}} = await api.get(`/movie/upcoming`);
+    
+   
+
+    return results
+}
+
+export async function getDiscoverSeries(){
+    
+    const {data:{results}} = await api.get(`/tv/airing_today`);
     
    
 

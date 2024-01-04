@@ -4,11 +4,11 @@ import { getImages } from '../../utils/getImages';
 
 
 
-function Card({ item}){
+function Card({ item, style}){
 
 return (
 
-  <Container>
+  <Container style={style}>
     
  <img src= {getImages(item.poster_path || item.profile_path || '')} />
         <h3> 
@@ -22,7 +22,7 @@ return (
 
 Card.propTypes = {
   item: PropTypes.object.isRequired,
-    
+  style: PropTypes.object,
   };
 
 export default Card
