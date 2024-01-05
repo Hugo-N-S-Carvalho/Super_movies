@@ -1142,7 +1142,7 @@ width: 100vw;
   @media screen and (max-width: 768px) {
     font-size: 15px;
   }
-`,QS="/cine_code/assets/logo-85a83a2c.png";function JS(){const[e,t]=T.useState(!1),{pathname:n}=Si();return window.onscroll=()=>{!e&&window.scrollY>150&&t(!0),e&&window.scrollY<=150&&t(!1)},k.jsxs(XS,{"data-changebackground":e,children:[k.jsx("img",{src:QS}),k.jsxs(KS,{children:[k.jsx(vl,{isactive:n==="/super_movies/"?"true":void 0,children:k.jsx(nl,{to:"/super_movies/",children:"Home"})}),k.jsx(vl,{isactive:n.includes("filmes")?"true":void 0,children:k.jsx(nl,{to:"/super_movies/filmes",children:"Filmes"})}),k.jsx(vl,{isactive:n.includes("series")?"true":void 0,children:k.jsx(nl,{to:"/super_movies/series",children:"Séries"})})]})]})}function ZS(){return k.jsxs(k.Fragment,{children:[k.jsx(Ah,{shouldForwardProp:e=>e!=="data-changebackground",children:k.jsx(JS,{})}),k.jsx(Zv,{})]})}const eE=Uh`
+`,QS="/cine_code/super_movies/assets/logo-85a83a2c.png";function JS(){const[e,t]=T.useState(!1),{pathname:n}=Si();return window.onscroll=()=>{!e&&window.scrollY>150&&t(!0),e&&window.scrollY<=150&&t(!1)},k.jsxs(XS,{"data-changebackground":e,children:[k.jsx("img",{src:QS}),k.jsxs(KS,{children:[k.jsx(vl,{isactive:n==="/super_movies/"?"true":void 0,children:k.jsx(nl,{to:"/super_movies/",children:"Home"})}),k.jsx(vl,{isactive:n.includes("filmes")?"true":void 0,children:k.jsx(nl,{to:"/super_movies/filmes",children:"Filmes"})}),k.jsx(vl,{isactive:n.includes("series")?"true":void 0,children:k.jsx(nl,{to:"/super_movies/series",children:"Séries"})})]})]})}function ZS(){return k.jsxs(k.Fragment,{children:[k.jsx(Ah,{shouldForwardProp:e=>e!=="data-changebackground",children:k.jsx(JS,{})}),k.jsx(Zv,{})]})}const eE=Uh`
 
 from{
 
@@ -1420,4 +1420,4 @@ body{
 
 
 
-`,fE="cine_code",pE="super_movie";yl.createRoot(document.getElementById("root")).render(k.jsxs(U.StrictMode,{children:[k.jsxs(ly,{basename:`/${fE}/${pE}/`,children:[k.jsx(Ah,{shouldForwardProp:e=>e==="img"}),k.jsx(cE,{})]}),k.jsx(dE,{})]}));
+`,fE="cine_code",pE="super_movies";yl.createRoot(document.getElementById("root")).render(k.jsxs(U.StrictMode,{children:[k.jsxs(ly,{basename:`/${fE}/${pE}/`,children:[k.jsx(Ah,{shouldForwardProp:e=>e==="img"}),k.jsx(cE,{})]}),k.jsx(dE,{})]}));
