@@ -29,8 +29,8 @@ return (
   <Container data-changebackground={changeBackground} >
     <img  src= {Logo} />
  <Menu>
-  <Li isactive={pathname === '/cine_code/' ? "true" : undefined} >
-    <Link to='/cine_code/'>Home</Link>
+  <Li isactive={pathname === '/' ? "true" : undefined} >
+    <Link to='/'>Home</Link>
    
   </Li>
 
