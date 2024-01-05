@@ -16,10 +16,10 @@ function Router() {
     <Routes>
      
       <Route path="/" element={<DefaultLayout />}>
-        <Route path="/super_movies/" element={<Home />} />
-        <Route path="/super_movies/filmes" element={<Movies />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/filmes" element={<Movies />} />
         <Route path="/series" element={<Series />} />
-        <Route path="/super_movies/detalhe/:id" element={<Detail />} />
+        <Route path="/detalhe/:id" element={<Detail />} />
         
       </Route>
     </Routes>

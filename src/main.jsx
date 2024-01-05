@@ -8,11 +8,12 @@ import { StyleSheetManager } from 'styled-components';
 
 
 const subdomain = 'cine_code'
+const superMovie = 'super_movie'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
  
  <React.StrictMode>
-    <BrowserRouter basename={`/${subdomain}/`}>
+    <BrowserRouter basename={`/${subdomain}/${superMovie}/`}>
     <StyleSheetManager shouldForwardProp={(prop) => prop === 'img'}>
     </StyleSheetManager>
     <Router/>
