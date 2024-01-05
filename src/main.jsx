@@ -8,7 +8,7 @@ import { StyleSheetManager } from 'styled-components';
 
 
 const subdomain = 'cine_code'
-const superMovie = 'super_movie'
+const superMovie = 'super_movies'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
  
