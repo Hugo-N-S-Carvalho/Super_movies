@@ -1420,4 +1420,4 @@ body{
 
 
 
-`,fE="cine_code",pE="super_movies";yl.createRoot(document.getElementById("root")).render(k.jsxs(U.StrictMode,{children:[k.jsxs(ly,{basename:`/${fE}/${pE}/`,children:[k.jsx(Ah,{shouldForwardProp:e=>e==="img"}),k.jsx(cE,{})]}),k.jsx(dE,{})]}));
+`,fE="cine_code";yl.createRoot(document.getElementById("root")).render(k.jsxs(U.StrictMode,{children:[k.jsxs(ly,{basename:`/${fE}/`,children:[k.jsx(Ah,{shouldForwardProp:e=>e==="img"}),k.jsx(cE,{})]}),k.jsx(dE,{})]}));
