@@ -1142,7 +1142,7 @@ width: 100vw;
   @media screen and (max-width: 768px) {
     font-size: 15px;
   }
-`,QS="/cine_code/assets/logo-85a83a2c.png";function JS(){const[e,t]=T.useState(!1),{pathname:n}=Si();return window.onscroll=()=>{!e&&window.scrollY>150&&t(!0),e&&window.scrollY<=150&&t(!1)},k.jsxs(XS,{"data-changebackground":e,children:[k.jsx("img",{src:QS}),k.jsxs(KS,{children:[k.jsx(vl,{isactive:n==="/cine_code/"?"true":void 0,children:k.jsx(nl,{to:"/cine_code/",children:"Home"})}),k.jsx(vl,{isactive:n.includes("filmes")?"true":void 0,children:k.jsx(nl,{to:"/filmes",children:"Filmes"})}),k.jsx(vl,{isactive:n.includes("series")?"true":void 0,children:k.jsx(nl,{to:"/series",children:"Séries"})})]})]})}function ZS(){return k.jsxs(k.Fragment,{children:[k.jsx(Ah,{shouldForwardProp:e=>e!=="data-changebackground",children:k.jsx(JS,{})}),k.jsx(Zv,{})]})}const eE=Uh`
+`,QS="/cine_code/assets/logo-85a83a2c.png";function JS(){const[e,t]=T.useState(!1),{pathname:n}=Si();return window.onscroll=()=>{!e&&window.scrollY>150&&t(!0),e&&window.scrollY<=150&&t(!1)},k.jsxs(XS,{"data-changebackground":e,children:[k.jsx("img",{src:QS}),k.jsxs(KS,{children:[k.jsx(vl,{isactive:n==="/"?"true":void 0,children:k.jsx(nl,{to:"/",children:"Home"})}),k.jsx(vl,{isactive:n.includes("filmes")?"true":void 0,children:k.jsx(nl,{to:"/filmes",children:"Filmes"})}),k.jsx(vl,{isactive:n.includes("series")?"true":void 0,children:k.jsx(nl,{to:"/series",children:"Séries"})})]})]})}function ZS(){return k.jsxs(k.Fragment,{children:[k.jsx(Ah,{shouldForwardProp:e=>e!=="data-changebackground",children:k.jsx(JS,{})}),k.jsx(Zv,{})]})}const eE=Uh`
 
 from{
 
